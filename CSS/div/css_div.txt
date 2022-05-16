@@ -1,0 +1,51 @@
+Elementul div
+=============
+
+-este o zona dreptunghiulara din document care poate ingloba continut
+
+<div></div>
+
+Stabilirea stilului pentru un div
+---------------------------------
+i. Stil inline
+
+<div style="..."> </div>
+
+ii. Folosesc stilul intern/extern si un id
+
+<div id='identificator'> </div>
+
+Fie in <style> </style> fie in fisier extern .css:
+
+div#identificator
+{
+    /*definitii de stil pentru div-ul cu id-ul specificat*/
+}
+
+Proprietati specifice
+---------------------
+- dimensiuni: latime x inaltime
+	width: 300px;
+	sau
+	width: 50%;
+
+	height: 200px;
+	sau
+	height: 75%;
+- culoare/imagine de fundal, bordura, margini, padding: 
+	background-color, background-image
+	border
+	margin
+	padding
+- colturi rotunjite: border-radius: 10px;
+- pozitionarea absoluta - se face folosind o pereche de proprietati
+  dintre urmatoarele: top, left, bottom, right
+	position:absolute;
+	top: 50px;
+	left: 20%;
+
+	  SAU
+
+	position: absolute; /*coltul din dreapta sus*/
+	right: 0px;
+	top: 0px;

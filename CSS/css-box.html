@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Margin, padding, borders</title>
+<meta charset="UTF-8">
+</head>
+<style media="screen">
+body{ background-color:silver;
+}
+p{ background-color:purple;
+	border: 1cm red;
+}
+</style>
+<body>
+<h1>Margins</h1>
+<p >
+A <span style="border: 3px groove red">producer</span> can add characters to the buffer only by means of the procedure
+append inside the monitor; the producer does not have direct access to buffer. The
+procedure first checks the condition notfull to determine if there is space available
+in the buffer. If not, the process executing the monitor is blocked on that condition.
+Some other process (producer or consumer) may now enter the monitor. Later,
+when the buffer is no longer full, the blocked process may be removed from the
+queue, reactivated, and resume processing. After placing a character in the buffer,
+the process signals the notempty condition. A similar description can be made of the
+consumer function.
+This example points out the division of responsibility with monitors compared
+to semaphores. In the case of monitors, the monitor construct itself enforces mutual
+exclusion: It is not possible for both a producer and a consumer simultaneously to
+access the buffer. However, the programmer must place the appropriate cwait and
+csignal primitives inside the monitor to prevent processes from depositing
+items in a full buffer or removing them from an empty one. In the case of sema-
+phores, both mutual exclusion and synchronization are the responsibility of the
+programmer.
+</p>
+<h1>Padding</h1>
+<p>
+A producer can add characters to the buffer only by means of the procedure
+append inside the monitor; the producer does not have direct access to buffer. The
+procedure first checks the condition notfull to determine if there is space available
+in the buffer. If not, the process executing the monitor is blocked on that condition.
+Some other process (producer or consumer) may now enter the monitor. Later,
+when the buffer is no longer full, the blocked process may be removed from the
+queue, reactivated, and resume processing. After placing a character in the buffer,
+the process signals the notempty condition. A similar description can be made of the
+consumer function.
+This example points out the division of responsibility with monitors compared
+to semaphores. In the case of monitors, the monitor construct itself enforces mutual
+exclusion: It is not possible for both a producer and a consumer simultaneously to
+access the buffer. However, the programmer must place the appropriate cwait and
+csignal primitives inside the monitor to prevent processes from depositing
+items in a full buffer or removing them from an empty one. In the case of sema-
+phores, both mutual exclusion and synchronization are the responsibility of the
+programmer.
+</p>
+<h1>Borders</h1>
+<p>
+A producer can add characters to the buffer only by means of the procedure
+append inside the monitor; the producer does not have direct access to buffer. The
+procedure first checks the condition notfull to determine if there is space available
+in the buffer. If not, the process executing the monitor is blocked on that condition.
+Some other process (producer or consumer) may now enter the monitor. Later,
+when the buffer is no longer full, the blocked process may be removed from the
+queue, reactivated, and resume processing. After placing a character in the buffer,
+the process signals the notempty condition. A similar description can be made of the
+consumer function.
+This example points out the division of responsibility with monitors compared
+to semaphores. In the case of monitors, the monitor construct itself enforces mutual
+exclusion: It is not possible for both a producer and a consumer simultaneously to
+access the buffer. However, the programmer must place the appropriate cwait and
+csignal primitives inside the monitor to prevent processes from depositing
+items in a full buffer or removing them from an empty one. In the case of sema-
+phores, both mutual exclusion and synchronization are the responsibility of the
+programmer.
+</p>
+</body>
+</html>

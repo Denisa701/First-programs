@@ -1,0 +1,5 @@
+Proprietăți de verificat pentru div#d:
+- overflow: visible; <=== implicit
+- overflow: hidden;
+- overflow: scroll;
+- overflow: auto;

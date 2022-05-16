@@ -1,0 +1,51 @@
+#include<iostream>
+#include<cmath>
+#include<fstream>
+using namespace std;
+
+void citire(int v[20], int& p)
+{
+    ifstream f("ceva2.txt");
+    f>>p;
+    for( int i=0;i<p;i++)
+            f>>v[i];
+        f.close();
+
+}
+
+void transfer( int v[20], int M[20][20],int n, int m,int p)
+{
+    if(m*n==p)
+    {
+        int nr=0;
+         for(int i=0; i<n;i++)
+        for ( int j=0; j<m; j++)
+            M[i][j]=v[nr++];
+
+    }
+}
+void afisare ( int B[20][20], int n, int m)
+{
+     for(int i=0; i<n;i++)
+       {
+
+       for ( int j=0; j<m; j++)
+            cout<< B[i][j]<<' ';
+            cout<< endl; }
+}
+void rescriere( int M[20][20], int v2[20],int n, int m)
+{
+    int nr=0;
+    for (int j=0; j<m;j++)
+        for(int i=0;i<n;i++)
+        v2[nr++]=M[i][j];
+}
+void afisare2( int v2[30], i)
+int main()
+{
+    int M[20][20],v[20],n,m,p;
+    cin>>n>>m;
+    citire(v,p);
+    transfer(v,M,n,m,p);
+    afisare(M,n,m);
+}

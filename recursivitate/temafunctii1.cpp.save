@@ -1,0 +1,29 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+ int ec_gr_2(double a,double b,double c)
+ {
+        int d;
+        d=pow(b,2)-4*a*c;
+        if(d<0)
+            return 0;
+        else
+           {
+            if(d>0)
+                return 2;
+            else
+
+                return 1;
+                 }
+
+ }
+
+ int main()
+ {
+    int q,w,e;
+    cin>>q>>w>>e;
+    cout<<ec_gr_2(q,w,e);
+
+
+ }
+ 

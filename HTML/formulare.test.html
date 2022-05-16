@@ -1,0 +1,77 @@
+<html> 
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<form id="string" action="fisier.php">
+	<label> Nume si Prenume
+	<input type="text">
+	</label>
+	
+<label> /Clasa
+	<select>
+	<option>XIA</option>
+	<option>XIB</option>
+	<option>XIC</option>
+	<option>XID</option>
+	</select>
+	</label>
+	<label>/Data
+	<input type="date">
+	</label>
+	<h1>Partea I</h1>
+	<hr>
+	<p>Încercuiţi litera corespunzătoare răspunsului corect:
+	<ol >
+	<li><pre>Ce se afişează în urma execuţiei secvenţei: char s[]="agenda"; cout<<sizeof(s); </pre>
+		<input type="radio" name="nume" value="5"> 5 
+		<input type="radio" name="nume" value="6"> 6 
+		<input type="radio" name="nume" value="7"> 7 
+		<input type="radio" name="nume" value="8"> 8
+		<li><pre>Ce se afişează în urma execuţiei secvenţei: char s[20]="carte"; cout<<strlen(s); ?</pre>
+		<input type="radio" name="nume1" value="5"> 5 
+		<input type="radio" name="nume1" value="6"> 6 
+		<input type="radio" name="nume1" value="7"> 7 
+		<input type="radio" name="nume1" value="8"> 20
+		
+		<li><pre>Dacă s şi t sunt două şiruri atunci copierea lui s în t se realizează folosind:</pre>
+		<input type="radio" name="nume2" value="5"> strncpy(t,s);
+		<input type="radio" name="nume2" value="6"> strcpy(s,t);
+		<input type="radio" name="nume2" value="7"> strcpy(t,s);
+		<input type="radio" name="nume2" value="8"> strcmp(t,s);
+		<label>
+		     <h3>PARTEA A II-A</h3>
+        <hr>
+        <h4>Precizaţi ce afişează fiecare din următoarele secvenţe:</h4>
+        <table frame="box" rules="all" width='100%'>
+        <tr><td><textarea name="II.a)">
+            a) Precizaţi ce afișează următoarea secvenţă:
+            char s[50]="verificare";
+            cout&lt; &lt;strchr(s,'i')&lt; &lt;endl; 
+            cout&lt; &lt;strstr(s,"fica")-s&lt; &lt;endl; 
+            strcat(s,"test");
+            cout&lt; &lt;s&lt; &lt;endl; 
+            strcpy(s+7,s+10);
+            cout&lt; &lt;s&lt; &lt;endl;
+        </textarea>
+            <td>
+                b)Completaţi spaţiile libere din secvenţa următoare astfel
+                încât aceasta să afişeze pe ecran toate propoziţiile dintr-un
+                text memorat într-o variabilă s care conţin un cuvânt
+                memorat în șirul de caractere w. Separatorii propoziţiilor
+                sunt conţinuţi în şirul de caractere t:<br>
+                char t[]=”.,;!?”;<br>
+                <label>char* p=<input type="text" name="II.1"></label>;<br>
+                <label>while(<input type="text" name="II.2"></label>)<br>
+                <label>{ <br> if(<input type="text" name="II.3"></label>)<br>
+                cout&lt; &lt;p&lt; &lt;endl;<br>
+                <label>p=<input type="text" name="II.4"></label>;<br>
+                }
+
+</table>
+<input type="button" name="ceva" value="trimite">
+	
+	</form >
+</body>
+</html>

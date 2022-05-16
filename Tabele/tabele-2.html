@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Test - Tabele HTML</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+<h1>Atributele rowspan &amp; colspan</h1>
+
+<table frame="box" rules="all" width="25%" >
+<tr align="center"><td>1</td><td rowspan='3'>2</td><td>3</td></tr>
+<tr align="center"><td>4</td><td>5</td></tr>
+<tr align="center"><td>6</td><td>7</td></tr>
+</table>
+<br>
+<table frame="box" rules="all"  width="25%">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+<tr align="center"><td colspan='4'>5</td></tr>
+<tr align="center"><td>9</td><td rowspan='2'>10</td><td>11</td><td>12</td></tr>
+<tr align="center"><td>13</td><td>15</td><td>16</td></tr>
+</table>
+<table frame="box" rules="all" width="25%">
+<br>
+<tr align="center"><td>1</td><td rowspan='3'>2</td><td>3</td><td rowspan='3' colspan='2'>4</td></tr>
+<tr align="center"><td>5</td><td>6</td></tr>
+<tr align="center"><td>7</td><td>8</td></tr>
+<tr align="center"><td colspan='2' rowspan='2'>9</td><td>10</td><td>11</td><td>12</td></tr>
+<tr align="center"><td>13</td><td>14</td><td>15</td></tr>
+</table>
+
+</body>
+</html>
